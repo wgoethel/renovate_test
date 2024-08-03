@@ -6,12 +6,13 @@
   "enabledManagers": ["pip_requirements"],
   "pip_requirements": {
     "fileMatch": [
-      "^requirements/.*\\.txt$"
+      "^requirements/.*\\.txt$",
+      "base\\.txt$"
     ]
   },
   "packageRules": [
     {
-      "matchPackagePatterns": [".*"],
+      "matchManagers": ["pip_requirements"],
       "groupName": "all-requirements"
     }
   ],
