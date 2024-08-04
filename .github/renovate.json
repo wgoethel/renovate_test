@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended"
   ],
+  "enabledManagers": ["pip_requirements"],
   "pip_requirements": {
     "fileMatch": [
       "^requirements/.*\\.txt$"
@@ -10,7 +11,7 @@
   },
   "packageRules": [
     {
-      "matchManagers": ["pip_requirements"],
+      "matchPackagePatterns": [".*"],
       "groupName": "all-requirements"
     }
   ],
@@ -18,4 +19,3 @@
     "on the 15th day of the month at 02:00"
   ]
 }
-
