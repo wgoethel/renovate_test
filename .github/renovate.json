@@ -8,12 +8,6 @@
       "^requirements/.*\\.txt$"
     ]
   },
-  "packageRules": [
-    {
-      "matchManagers": ["pip_requirements"],
-      "groupName": "all-requirements"
-    }
-  ],
   "schedule": [
     "on the 15th day of the month at 02:00"
   ]
